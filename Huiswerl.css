@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("c51f7835c815bbf83f8e4d15b3de91be.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    background-attachment: fixed; 
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+nav {
+    background-color: rgba(167, 0, 0, 0.8); 
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    margin: 0 20px;
+    padding: 8px 16px;
+    transition: 0.3s; 
+}
+
+nav a:hover {
+    background-color: rgb(255, 255, 255);
+    color: #004729;
+    border-radius: 5px;
+}
+
+p {
+    margin: 50px auto;
+    width: 80%;
+    color: aqua;
+    line-height: 1.6;
+    text-align: center;
+    font-size: 1.2rem;
+}
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+footer {
+    background-color: rgb(0, 0, 0, 0.8);
+    color: rgba(167, 0, 0, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    border-top: 1px solid #7b7b7b;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+footer p {
+    font-size: 14px;
+    margin: 0;
+    color: #aaa;
+}
+/* حاوية النموذج للتوسيط الكامل */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* يضمن التوسط عمودياً في الصفحة */
+}
+
+/* تصميم النموذج */
+.contact-form {
+    background: linear-gradient(145deg, #1a1a1a, #0d0d0d); /* تدرج أسود احترافي */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #333;
+}
+
+.contact-form h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* تنسيق الحقول */
+.contact-form label {
+    color: #aaa;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background: #222; /* لون أسود باهت للحقل */
+    border: 1px solid #444;
+    border-radius: 8px;
+    color: #fff;
+    box-sizing: border-box; /* لضمان عدم خروج الحقل عن الحدود */
+    transition: 0.3s;
+}
+
+/* تأثير عند الضغط على الحقل */
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #777;
+    background: #2a2a2a;
+}
+
+/* تنسيق زر الإرسال */
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background: #fff;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #ccc;
+    transform: translateY(-2px);
+}
+h1 {
+    color: #990000;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 7em;
+}
+.cv-container {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+}
+.title {
+    color: #fff;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.cv-table {
+    width: 100%;
+    max-width: 900px;
+    border-collapse: collapse;
+    background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+    color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgb(0, 0, 0, 0.5);
+    border: 1px solid #333; 
+}
+.cv-table thead {
+    background-color: rgb(255, 255, 255, 0.5);
+}
+.cv-table th {
+padding: 20px;
+text-align: left;
+color: aqua;
+border-bottom: 1px solid #333;
+font-size: 1.1rem;
+}
+
+.cv-table td{
+    padding: 15px 20px;
+    border-bottom: 1px solid #222;
+    color: #ccc;
+    font-size: 1rem;
+
+}
+.cv-table tbody tr:hover {
+    background: rgb(255, 255, 255, 0.03,);
+    transition: 0.3s;
+}
+.cv-table tbody tr:last-child td{
+    border-bottom: none;
+}
